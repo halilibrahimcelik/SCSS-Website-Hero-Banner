@@ -108,7 +108,7 @@
 
 @media screen and (max-width: 700px) {
   .showcase {
-    height: 500px;
+    background-color: red;
   }
   .showcase-content {
     display: flex;
@@ -129,16 +129,32 @@
 
   nav {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
-  nav .icon {
-    width: 40px;
-    height: 40px;
+  nav .button {
+    font-size: 40px;
   }
   nav .list {
+    margin-top: 0.9rem;
     width: 100%;
   }
   nav .list li {
     display: block;
+    border-top: 1px solid #ccc;
+  }
+
+  .collapsible .collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s;
+  }
+  .collapsible .collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+  }
+}
+@media screen and (min-width: 701px) {
+  .button {
+    display: none;
   }
 }
 * {
@@ -152,10 +168,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -166,6 +178,10 @@ nav {
   justify-content: space-between;
   margin-top: 1rem;
   margin-bottom: 5rem;
+}
+nav img {
+  width: 40px;
+  height: 40px;
 }
 nav ul {
   list-style: none;
@@ -185,7 +201,7 @@ nav ul li a:hover {
 .showcase {
   background-color: #0e6cff;
   color: #fff;
-  height: 660px;
+  max-height: 100vh;
 }
 
 .showcase-content {
@@ -194,11 +210,6 @@ nav ul li a:hover {
 }
 .showcase-content img {
   width: 50%;
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

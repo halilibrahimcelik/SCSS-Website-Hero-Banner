@@ -12,9 +12,7 @@ background-color: $light-color;
 font-family: $font-stack;
 }
 
-img{
-    width: 100%;
-}
+
 a{
     color: set-text-color($primary-color);
     text-decoration: none;
@@ -25,6 +23,11 @@ nav{
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 5rem;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    
 ul{
     list-style: none;
     li{
@@ -42,11 +45,12 @@ ul{
 
         }
     }
+    
 }
 }
 .showcase{
  @include set-background($primary-color);
-    height: 660px;
+    max-height: 100vh;
 }
 
 
@@ -65,8 +69,4 @@ ul{
     }
 }
 
-.icon {
-    width: 40px;
-    height: 40px;
 
-  }

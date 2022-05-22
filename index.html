@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header class="showcase">
       <div class="container">
-        <nav>
-          <h1 class="logo">My Website</h1>
-          <img src="menu.svg" class="icon" alt="" />
-          <ul class="list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-          </ul>
-        </nav>
+        <div class="collapsible">
+          <nav class="navBar collapsible--expanded">
+            <h1 class="logo">My Website</h1>
+            <div class="button">
+              <i class="fa fa-bars l"></i>
+            </div>
+            <ul class="list collapsible__content">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="showcase-content">
           <div>
@@ -36,4 +45,8 @@
       </div>
     </header>
   </body>
+  <script
+    src="https://kit.fontawesome.com/842d7e72ba.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
