@@ -35,6 +35,10 @@ $spaceamounts:(1,2,3,4,5);
     .my-#{$space}{
         margin: #{$space}rem 0;
     }
+    .mt-#{$space}{
+        margin:#{$space}rem 0 0  0;
+    }
+    
     .p-#{$space}{
         margin: #{$space}rem;
     }

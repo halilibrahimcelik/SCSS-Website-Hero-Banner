@@ -1,12 +1,15 @@
-@import "config";
-@import "utilities";
-@import "buttons";
-@import "mobile";
+@import "components/config";
+@import "components/buttons";
+@import "components/mobile";
+@import "components/utilities";
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 62.5%;
+  }
 body{
 background-color: $light-color;
 font-family: $font-stack;
@@ -59,14 +62,65 @@ ul{
   height: 100&;
 
 
-    div{
-    
- 
-    }
     img{
         width:50%;
        
     }
+}
+
+//*******Register Info section
+
+
+.register{
+    background-color: $primary-color;
+    
+}
+.container-register{
+padding-top: 8rem;
+color:$light-color;
+height: 100vh;
+display:flex;
+gap:2rem;
+margin-bottom: 5rem;;
+
+.introduction{
+    width: 50%;
+}
+.fillOut{
+  display: flex;
+  flex-direction: column;  
+ width:40rem;
+  height:fit-content;
+  background-color:$light-color;
+  border-radius: 9px;
+
+label{
+
+    display:inline;
+}
+
+  input{
+      display: block;
+      width: 69%;
+    margin:0 auto;
+   padding:0.9rem;
+    border-style: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 9px;
+    
+    &:focus{
+        outline: none;
+    }
+  }
+  a{
+     width: 10rem;
+    display: block;
+    text-align: center;
+    margin:0 auto;
+     
+  }
+}
+
 }
 
 

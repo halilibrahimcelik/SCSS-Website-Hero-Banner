@@ -6,6 +6,10 @@
   margin: 1rem 0;
 }
 
+.mt-1 {
+  margin: 1rem 0 0 0;
+}
+
 .p-1 {
   margin: 1rem;
 }
@@ -20,6 +24,10 @@
 
 .my-2 {
   margin: 2rem 0;
+}
+
+.mt-2 {
+  margin: 2rem 0 0 0;
 }
 
 .p-2 {
@@ -38,6 +46,10 @@
   margin: 3rem 0;
 }
 
+.mt-3 {
+  margin: 3rem 0 0 0;
+}
+
 .p-3 {
   margin: 3rem;
 }
@@ -52,6 +64,10 @@
 
 .my-4 {
   margin: 4rem 0;
+}
+
+.mt-4 {
+  margin: 4rem 0 0 0;
 }
 
 .p-4 {
@@ -70,19 +86,16 @@
   margin: 5rem 0;
 }
 
+.mt-5 {
+  margin: 5rem 0 0 0;
+}
+
 .p-5 {
   margin: 5rem;
 }
 
 .py-5 {
   margin: 5rem 0;
-}
-
-.container {
-  max-width: 1100px;
-  padding: 0 30px;
-  margin: 0 auto;
-  overflow: auto;
 }
 
 .btn-secondary, .btn-primary {
@@ -107,9 +120,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .showcase {
-    background-color: red;
-  }
   .showcase-content {
     display: flex;
     flex-direction: column-reverse;
@@ -157,10 +167,21 @@
     display: none;
   }
 }
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -210,6 +231,51 @@ nav ul li a:hover {
 }
 .showcase-content img {
   width: 50%;
+}
+
+.register {
+  background-color: #0e6cff;
+}
+
+.container-register {
+  padding-top: 8rem;
+  color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.container-register .introduction {
+  width: 50%;
+}
+.container-register .fillOut {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: fit-content;
+  background-color: #f4f4f4;
+  border-radius: 9px;
+}
+.container-register .fillOut label {
+  display: inline;
+}
+.container-register .fillOut input {
+  display: block;
+  width: 69%;
+  margin: 0 auto;
+  padding: 0.9rem;
+  border-style: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 9px;
+}
+.container-register .fillOut input:focus {
+  outline: none;
+}
+.container-register .fillOut a {
+  width: 10rem;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
