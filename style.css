@@ -1,0 +1,204 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  margin: 1rem;
+}
+
+.py-1 {
+  margin: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  margin: 2rem;
+}
+
+.py-2 {
+  margin: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  margin: 3rem;
+}
+
+.py-3 {
+  margin: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  margin: 4rem;
+}
+
+.py-4 {
+  margin: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  margin: 5rem;
+}
+
+.py-5 {
+  margin: 5rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.btn-secondary, .btn-primary {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 7px;
+}
+.btn-secondary:hover, .btn-primary:hover {
+  transform: scale(0.96);
+}
+
+.btn-primary {
+  background-color: #0055da;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .showcase {
+    height: 500px;
+  }
+  .showcase-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .showcase-content img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .showcase-content div {
+    text-align: center;
+  }
+  .showcase-content .btn-primary, .showcase-content .btn-secondary {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+  nav .icon {
+    width: 40px;
+    height: 40px;
+  }
+  nav .list {
+    width: 100%;
+  }
+  nav .list li {
+    display: block;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+  padding: 0.8rem;
+}
+nav ul li a {
+  opacity: 0.7;
+}
+nav ul li a:hover {
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.showcase {
+  background-color: #0e6cff;
+  color: #fff;
+  height: 660px;
+}
+
+.showcase-content {
+  display: flex;
+  height: 100 .showcase-content;
+}
+.showcase-content img {
+  width: 50%;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

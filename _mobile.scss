@@ -1,0 +1,46 @@
+@media  screen and(max-width:700px){
+    .showcase{
+        height: 500px;
+        //!showcase-content &-content şeklinde de yazılabiliyor
+        &-content{
+        display: flex;
+        flex-direction: column-reverse;
+        
+        img{
+            margin:0 auto;
+            width:100%;
+        }
+
+        div{
+            text-align: center;
+        }
+        %btn{
+      
+            display: block;
+            width: 50%;
+            margin: 1rem auto;
+            
+        }
+
+        }
+    }
+
+    nav{
+        flex-wrap: wrap;
+        .icon {
+            width: 40px;
+            height: 40px;
+         
+          }
+
+        .list {
+            
+            width: 100%;
+            li{
+                display: block;
+            }
+
+        }
+    }
+ 
+}
