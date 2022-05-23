@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
 }
 html {
     font-size: 62.5%;
@@ -21,6 +22,9 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 1.2rem;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -53,14 +57,13 @@ ul{
 }
 .showcase{
  @include set-background($primary-color);
-    max-height: 100vh;
+    height: 100vh;
 }
 
 
 .showcase-content{
     display: flex;
-  height: 100&;
-
+ 
 
     img{
         width:50%;
@@ -73,13 +76,15 @@ ul{
 
 .register{
     background-color: $primary-color;
-    
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
 }
+
 .container-register{
-padding-top: 8rem;
-color:$light-color;
-height: 100vh;
-display:flex;
+
+    color:$light-color;
+    display:flex;
+    height:40rem;
 gap:2rem;
 margin-bottom: 5rem;;
 
@@ -88,12 +93,18 @@ margin-bottom: 5rem;;
 }
 .fillOut{
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
+
  width:40rem;
-  height:fit-content;
   background-color:$light-color;
   border-radius: 9px;
 
+  h2{
+      color:black;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
 label{
 
     display:inline;
@@ -117,6 +128,7 @@ label{
     display: block;
     text-align: center;
     margin:0 auto;
+    font-size: 1.2rem;
      
   }
 }
@@ -124,3 +136,73 @@ label{
 }
 
 
+//****Deployment
+
+.deployments{
+    height: 100vh;
+    color:$third-color;
+
+    h2{
+        text-align: center;
+    }
+    .header-1{
+        width: 50rem;
+    }
+    .features{
+        display:flex;
+        justify-content: space-around;
+        
+        
+        
+        .feature{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+        
+            i{
+               font-size: 8rem;
+               color:black
+              
+            }
+            .text{
+                color:darken($primary-color, 20%);
+                text-decoration: underline;
+            }
+        
+        }
+    }
+
+    .samples{
+        
+        display:flex;
+        height: 20rem;
+        gap:2rem;
+
+        img{
+           width: 100%;
+           border-radius: 10px;
+        }
+        .sample{
+            width: 70%;
+
+         
+            
+        }
+        .sample1{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            .slogan{
+               
+              
+                border:1 px solid #ccc;
+                padding:3rem;
+                background-color: rgb(255, 255, 255);
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                border-radius: 9px;
+
+            }
+        }
+    }
+}
