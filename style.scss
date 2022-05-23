@@ -40,13 +40,15 @@ ul{
     li{
         display: inline;
         padding: 0.8rem;
+        font-size: 2rem;
       
         a{
 
             opacity: 0.7;
             &:hover{
 
-                 transition: 0.3s ease-in-out;
+                 transition: 0.3s ease-in;
+                 transform: scale(1.2);
                 opacity: 1;
             }
 
@@ -139,7 +141,7 @@ label{
 //****Deployment
 
 .deployments{
-    height: 100vh;
+    height: 62vh;
     color:$third-color;
 
     h2{
@@ -212,17 +214,20 @@ label{
 
 
 .footer-area{
-    height: 100vh;
-
+    height: 70vh;
+    
+    .wrapper{
+        @include set-background($primary-color);
+        
+    }
     .heading{
-        background-color: $primary-color;
         display: flex;
-        gap:2rem;
+    
         text-align: center;
 
 
     img{
-        width: 90%;
+        width: 75%;
     
 
     }
@@ -287,11 +292,15 @@ label{
  
    } 
 
+   .wrapper-info
+   {
+       background-color:darken($primary-color, 34%);
+
+   }
    .footer-info{
        display: flex;
        color:$light-color;
-       background-color:darken($primary-color, 34%);
-       justify-content: space-between;
+       justify-content:space-between;
        height: 10rem;
        font-size: 2rem;
 

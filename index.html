@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -17,7 +18,7 @@
       <div class="container">
         <div class="collapsible">
           <nav class="navBar collapsible--expanded">
-            <h1 class="logo">My Website</h1>
+            <h1 class="logo">WebTengo</h1>
             <div class="button">
               <i class="fa fa-bars l"></i>
             </div>
@@ -29,27 +30,27 @@
           </nav>
         </div>
 
-        <div class="showcase-content">
+        <div class="showcase-content"  data-aos="fade-down">
           <div>
             <h1>Make Your Website Great Again!</h1>
             <p class="my-1">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
               eligendi tempore atque laborum. Quisquam nemo at non. Corrupti,
               vitae dolore.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates fugiat, eaque quis modi eos architecto mollitia expedita nobis nesciunt soluta maxime commodi veniam, quisquam alias dolorem corporis consequatur blanditiis nam quasi quia error minima quam sit. Nihil ducimus, illum adipisci laborum animi consectetur, reiciendis autem quis distinctio atque ad?
             </p>
             <a href="#" class="btn-primary">Learn More</a>
             <a href="#" class="btn-secondary">Sign Up</a>
           </div>
-          <img src="images/home-2-img.png" alt="" />
+          <img src="images/home-2-img.png" alt="" data-aos="flip-up" />
         </div>
       </div>
     </header>
 
     <!-- Showcase Area   -->
-
-    <section class="register">
+    <section class="register" >
       <div class="container container-register">
-        <div class="introduction">
+        <div class="introduction" data-aos="slide-left">
           <h1>Easier Deployment</h1>
           <p class="my-1">
             Create your own website with a little help from us. Please fill out
@@ -57,7 +58,7 @@
           </p>
           <button id="readMore" class="btn-primary">Read More</button>
         </div>
-        <form action="" class="fillOut">
+        <form action="" class="fillOut" data-aos="fade-down-left">
           <h2>Request a Demo</h2>
           <label class="my-1" for="name">
             <input type="text" id="name" placeholder="Enter your name.." />
@@ -77,26 +78,27 @@
       </div>
     </section>
 
+
     <!-- deployment section -->
     <section class="deployments container">
-      <h2 class="header-1 mt-3">
+      <h2 class="header-1 mt-3" data-aos="slide-down">
         Welcome to the best platform for building applications of all types with
         modern architecture and scaling
       </h2>
       <div class="features">
-        <div class="feature">
+        <div class="feature" data-aos="zoom-in-up">
           <div class="m-1 icons">
             <i class="fa-solid fa-bars-progress"></i>
           </div>
           <h1 class="m-1">10,349,405</h1>
           <h2 class="text">Deployments</h2>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="zoom-in-down">
           <div class="m-1 icons"><i class="fa-solid fa-upload"></i></div>
           <h1 class="m-1">987 TB</h1>
           <h2 class="text">Published</h2>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="zoom-out-up">
           <div class="m-1 icons">
             <i class="fa-solid fa-diagram-project"></i>
           </div>
@@ -105,14 +107,14 @@
         </div>
       </div>
       <div class="samples my-4">
-        <div class="sample my-2">
+        <div class="sample my-2" data-aos="fade-left">
           <img src="images/npm.png" alt="" />
         </div>
         <div class="sample1">
-          <div class="slogan my-1">
+          <div class="slogan my-1" data-aos="fade-right">
             <h1>Easy to use, cross platform CLI</h1>
           </div>
-          <div class="slogan my-1"><h1>Deploy in seconds</h1></div>
+          <div class="slogan my-1" data-aos="fade-right"><h1>Deploy in seconds</h1></div>
         </div>
       </div>
     </section>
@@ -120,62 +122,85 @@
     <!-- footer -->
 
     <footer class="footer-area">
-      <div class="heading">
-        <div class="heading-1">
-          <h1 class="m-2">With Our Guidance Create You Will Be Succeed</h1>
-          <h4 class="m-2">
-            After seeing what we provide, your way of building websites will
-            completely change
-          </h4>
-          <a class="btn-primary m-2" href="#">Read More</a>
-        </div>
-        <div class="logo-1">
-          <img src="images/cloud.png" alt="" />
+      <div class="wrapper">
+        <div class="heading container" >
+          <div class="heading-1" data-aos="flip-up">
+            <h1 class="m-2">With Our Guidance Create You Will Be Succeed</h1>
+            <h4 class="m-2">
+              After seeing what we provide, your way of building websites will
+              completely change
+            </h4>
+            <a class="btn-primary m-2" href="#">Read More</a>
+          </div>
+          <div class="logo-1" >
+            <img src="images/cloud.png" alt="" data-aos="fade-up"/>
+          </div>
         </div>
       </div>
 
       <h1 class="footer-title m-2">Supported Languages</h1>
 
-      <div class="languages container">
-        <div class="language language1">
+      <div class="languages"
+      >
+        <div class="language language1" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <h3 class="lan-header">JS</h3>
           <div class="lan-logo">
             <img src="images/logos/JS.png" alt="" />
           </div>
         </div>
-        <div class="language language2">
+        <div class="language language2"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <h3 class="lan-header">Python</h3>
           <div class="lan-logo">
             <img src="images/logos/python.png" alt="" />
           </div>
         </div>
 
-        <div class="language language3">
+        <div class="language language3"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <h3 class="lan-header">C++</h3>
           <div class="lan-logo">
             <img src="images/logos/csharp.png" alt="" />
           </div>
         </div>
-        <div class="language language4">
+        <div class="language language4"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <h3 class="lan-header">Node.js</h3>
           <div class="lan-logo">
             <img src="images/logos/node.png" alt="" />
           </div>
         </div>
-        <div class="language language5">
+        <div class="language language5"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <h3 class="lan-header">Ruby</h3>
           <div class="lan-logo">
             <img src="images/logos/ruby.png" alt="" />
           </div>
         </div>
-        <div class="language language6">
+        <div class="language language6"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <h3 class="lan-header">Scala</h3>
           <div class="lan-logo">
             <img src="images/logos/scala.png" alt="" />
           </div>
         </div>
 
-        <div class="language language7">
+        <div class="language language7"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
           <h3 class="lan-header">PHP</h3>
           <div class="lan-logo">
             <img src="images/logos/php.png" alt="" />
@@ -185,27 +210,33 @@
       </div>
 
 
-        <div class="footer-info container">
-          <div class="info-heeder m-1">
-            <h2>Webtengo</h2>
-            <h4>Copyrights© 2022</h4>
-          </div>
-          <div class="info-toggler m-1">
-         
-            <i class="fa-solid fa-angle-up"></i> 
-           <a class="arrow-link" href="#">
-            Back To Top</a>
-            
-          </div>
-
-          <div class="info-social-pages m-1">
-            <div class="github"><i class="fa-brands fa-github"></i></div>
-            <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
-            <div class="linkedin"><i class="fa-brands fa-linkedin"></i></div>
-            <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
-          </div>
+        <div class="wrapper-info">
+          <div class="footer-info container">
+            <div class="info-heeder m-1">
+              <h2>Webtengo</h2>
+              <h4>Copyrights© 2022</h4>
+            </div>
+            <div class="info-toggler m-1">
+          
+              <i class="fa-solid fa-angle-up"></i>
+             <a class="arrow-link" href="#">
+              Back To Top</a>
+          
+            </div>
+            <div class="info-social-pages m-1">
+              <div class="github"><i class="fa-brands fa-github"></i></div>
+              <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+              <div class="linkedin"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
