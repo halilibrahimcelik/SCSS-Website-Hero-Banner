@@ -176,6 +176,13 @@
     margin: 0 auto;
     width: 100%;
   }
+
+  .deployments .header-1 {
+    width: auto;
+  }
+  .deployments h2 {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 701px) {
   .button {
@@ -302,14 +309,11 @@ nav ul li a:hover {
 }
 
 .deployments {
-  height: 62vh;
+  height: 100vh;
   color: #656565;
 }
 .deployments h2 {
   text-align: center;
-}
-.deployments .header-1 {
-  width: 50rem;
 }
 .deployments .features {
   display: flex;
