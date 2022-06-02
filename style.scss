@@ -96,8 +96,7 @@ margin-bottom: 5rem;;
 .fillOut{
   display: flex;
   flex-direction: column;
-
- width:40rem;
+width: 50%;
   background-color:$light-color;
   border-radius: 9px;
 
@@ -109,7 +108,7 @@ margin-bottom: 5rem;;
   }
 label{
 
-    display:inline;
+    // display:inline;
 }
 
   input{
